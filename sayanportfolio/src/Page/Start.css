@@ -1,0 +1,11 @@
+.resume-text{
+    display: inline-block;
+    border-bottom: 1px solid salmon;
+    padding: 5px;
+    margin:2% 25% 0 0
+}
+.resume-text:hover{
+    border: 1px solid teal;
+    transition: 0.4s ease-in-out ;
+}
+

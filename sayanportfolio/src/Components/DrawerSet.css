@@ -1,0 +1,35 @@
+.drawer::-webkit-scrollbar{
+    
+    display: none;
+}
+
+
+.drawerMenuOne:hover{
+    transform:scale(1.2);
+    background-color: aqua;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+    
+}
+.drawerMenuTwo:hover{
+    transform:scale(1.2);
+    background-color: gold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+.drawerMenuThree:hover{
+    transform:scale(1.2);
+    background-color: skyblue;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+.drawerMenuFour:hover{
+    transform:scale(1.2);
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
