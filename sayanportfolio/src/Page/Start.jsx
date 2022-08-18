@@ -6,13 +6,13 @@ import DrawerSet from "../Components/DrawerSet";
 export default function Start(){
 
     return(
-        <Flex justifyContent={"center"} m="5% 15% 0 0" alignItems="center">
-        <Box width={"40%"} border="1px solid black">    
+        <Flex justifyContent={"center" }h="100vh" alignItems="center">
+        <Box width={"40%"} >    
         <HeroLine/>
-        <Text className="resume-text" fontSize={"2xl"}><a href="https://drive.google.com/file/d/18gy9rX-_VHUc5qo-4myKNR_A4jEm250d/view?usp=sharing" target="_blank">VIEW RESUME</a></Text>
+        <Text className="resume-text" fontSize={"2xl"}><a href="https://drive.google.com/file/d/18gy9rX-_VHUc5qo-4myKNR_A4jEm250d" target="_blank">VIEW RESUME</a></Text>
         </Box>
-        <Box border={"1px solid red"}>
-        <DrawerSet/>
+        <Box>
+        <DrawerSet buttonName={"GET STARTED"}/>
         </Box>
         </Flex>
     )

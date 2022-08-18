@@ -1,11 +1,17 @@
 .resume-text{
     display: inline-block;
-    border-bottom: 1px solid salmon;
+    border-bottom: 1px solid #fa8072;
     padding: 5px;
-    margin:2% 25% 0 0
+    margin:7% 25% 0 0;
+    color: white;
 }
 .resume-text:hover{
-    border: 1px solid teal;
-    transition: 0.4s ease-in-out ;
+    
+    -webkit-backdrop-filter: blur(12px) saturate(200%);
+    background-color: #fa8072;
+    border-radius: 10px;
+    /* border: 1px solid rgba(209, 213, 219, 0.3); */
+    border: 1px solid salmon;
+    transition: 0.3s ease-in-out ;
 }
 
