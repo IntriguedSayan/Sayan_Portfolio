@@ -2,7 +2,10 @@ import { Box } from '@chakra-ui/react'
 import { useState } from 'react'
 
 import About from './Page/About'
+
+import Contact from './Page/Contact'
 import Projects from './Page/Projects'
+import Skills from './Page/Skills'
 import Start from './Page/Start'
 
 function App() {
@@ -13,6 +16,9 @@ function App() {
       <Start/>
       <About/>
       <Projects/>
+      <Skills/>
+      <Contact/>
+      
     </Box>
         
   )

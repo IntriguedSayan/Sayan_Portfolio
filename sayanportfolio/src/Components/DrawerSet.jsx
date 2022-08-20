@@ -5,9 +5,10 @@ import {
     Text,
   } from '@chakra-ui/react'
 import { useRef } from 'react'
+import { NavLink } from 'react-router-dom'
 import "./DrawerSet.css"
 
-export default function DrawerSet({buttonName}){
+export default function DrawerSet({buttonName,skillRef,contactRef}){
     const { isOpen, onOpen, onClose } = useDisclosure ()
     const btnRef = useRef ()
     
@@ -33,10 +34,17 @@ export default function DrawerSet({buttonName}){
             <DrawerHeader>MENU</DrawerHeader>
             
             <DrawerBody  className="drawer">
-            <Text className="drawerMenuOne" fontSize={"x-large"} backgroundColor="transparent" mt={"15%"} p={"4%"}>About Me</Text>
-            <Text className="drawerMenuTwo" fontSize={"x-large"} backgroundColor="transparent" mt={"15%"} p={"4%"}>Projects</Text>
-            <Text className="drawerMenuThree" fontSize={"x-large"} backgroundColor="transparent" mt={"15%"} p={"4%"}>Skills & TechStacks</Text>
-            <Text className="drawerMenuFour" fontSize={"x-large"} backgroundColor="transparent" mt={"15%"} p={"4%"}>Contact Info</Text>
+            <a href="#ABOUT"><Text className="drawerMenuOne" fontSize={"x-large"} backgroundColor="transparent" mt={"15%"} p={"4%"}
+            >About Me</Text></a>
+
+            <a href="#PROJECTS"><Text className="drawerMenuTwo" fontSize={"x-large"} backgroundColor="transparent" mt={"15%"} p={"4%"}
+            >Projects</Text></a>
+
+            <a href="#SKILLS"><Text className="drawerMenuThree" fontSize={"x-large"} backgroundColor="transparent" mt={"15%"} p={"4%"}
+            >Skills & TechStacks</Text></a>
+
+            <a href="#CONTACT"><Text className="drawerMenuFour" fontSize={"x-large"} backgroundColor="transparent" mt={"15%"} p={"4%"}>Contact Info</Text></a>
+
             </DrawerBody>
   
             <DrawerFooter>

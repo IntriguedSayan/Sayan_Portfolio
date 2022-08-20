@@ -2,15 +2,18 @@ import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import DrawerSet from "../Components/DrawerSet";
 import sayan from "../assets/sayan.jpeg"
 import "./About.css"
+import { useRef } from "react";
 
 export default function About(){
 
+    const aboutRef=useRef(null)
+
     return(
-        <Box border={"1px solid red"} >
+        <Box>
             <Box  display="inline-block" m={"4% 0 0 90%"}>
-            <DrawerSet buttonName={"MENU"}/>
+            <DrawerSet buttonName={"MENU"} />
             </Box>
-            <Text fontSize={"5xl"} m="-6% 0 2% 40%" color={"white"} >About Me</Text>
+            <a id="ABOUT"><Text className="headertext" fontSize={"5xl"} m="-6% 0 2% 43%" color={"white"} ref={aboutRef} >Myself</Text></a>
             <Box width={"20%"} m="2% 0 0% 38%">
             <Image src={sayan}  height={"35%"} borderRadius="25%0" alt="Profile Pic" />
             </Box>

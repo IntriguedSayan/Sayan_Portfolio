@@ -3,7 +3,7 @@ import {SettingsIcon} from "@chakra-ui/icons"
 import "../Page/Projects.css"
 import "./ProjectDesc.css"
 
-export default function ProjectDesc({projectName,descOne,descTwo,descThree,descFour}){
+export default function ProjectDesc({projectName,descOne,descTwo,descThree,descFour,website,gitrepo}){
 
     return(
         <>
@@ -31,8 +31,8 @@ export default function ProjectDesc({projectName,descOne,descTwo,descThree,descF
                             </ListItem>
                         </List>
                         <Flex justify={"space-evenly"}>
-                        <Text className="linktext" width={"50%"} mb={"2%"} fontSize={"large"}><a href="" target="_blank">VIEW WEBSITE</a></Text>
-                        <Text className="linktext" width={"50%"} mb={"2%"} fontSize={"large"}><a href="" target="_blank">GITHUB REPO</a></Text>
+                        <Text className="linktext" width={"50%"} mb={"2%"} fontSize={"large"}><a href={website} target="_blank">VIEW WEBSITE</a></Text>
+                        <Text className="linktext" width={"50%"} mb={"2%"} fontSize={"large"}><a href={gitrepo} target="_blank">GITHUB REPO</a></Text>
                         </Flex>
         </>
     )
